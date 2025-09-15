@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .card img {
+            height: 400px;
+            width: 80px;
+            border-radius: 20px;
+            object-fit: cover;
+            transition: all 0.4s ease;
+        }
+
+        .card:hover img {
+            width: 250px;
+        }
+
+        .info {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .card:hover .info {
+            opacity: 1;
+        }
+
+        .circulo {
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .nome {
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .desc {
+            font-size: 14px;
+            margin: 0;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="1000.png" alt="">
+            <div class="info">
+                <div class="circulo"></div>
+                <p class="nome">Bilu</p>
+                <p class="desc">Eu sou o fodão</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="462138503_3204977146306354_812103044583620942_n.png" alt="">
+            <div class="info">
+                <div class="circulo"></div>
+                <p class="nome">Pentelho Games</p>
+                <p class="desc">Já sane hehe</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="CAPIATOR.jpg" alt="">
+            <div class="info">
+                <div class="circulo"></div>
+                <p class="nome">Capivara insana</p>
+                <p class="desc">Olha essa geometria</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="homem-libanes-tradicional-velho-com-bigode-400-5471683.png" alt="">
+            <div class="info">
+                <div class="circulo"></div>
+                <p class="nome">Homem libanês</p>
+                <p class="desc">Apenas um homem libanês</p>
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol>
+        <li>justify-content: end</li>
+        <li>justify-content: center</li>
+        <li>justify-content: space-around</li>
+        <li>justify-content: space-between</li>
+        <li>align-items: end</li>
+        <li>align-items: center; justify-content: center</li>
+        <li>align-items: flex-end; justify-content: space-around</li>
+        <li>flex-direction: row-reverse</li>
+        <li>flex-direction: column</li>
+        <li>flex-direction: row-reverse; justify-content: flex-end</li>
+        <li>flex-direction: column; justify-content: end</li>
+        <li>flex-direction: column-reverse; justify-content: space-between</li>
+        <li>flex-direction: row-reverse; align-items: flex-end; justify-content: center</li>
+        <li>order: 1</li>
+        <li>order: -1</li>
+        <li>align-self: end</li>
+        <li>order: 1; align-self: end</li>
+        <li>flex-wrap: wrap</li>
+        <li>flex-direction: column; flex-wrap: wrap</li>
+        <li>flex-flow: column wrap</li>
+        <li>align-content: start</li>
+        <li>align-content: end</li>
+        <li>flex-direction: column-reverse; align-content: center</li>
+        <li>flex-direction: column-reverse; flex-wrap: wrap-reverse; align-content: space-between; justify-content: center</li>
+    </ol>
+
+    <h1>Explicação</h1>
+
+    <p><strong>Questão 14</strong></p>
+    <p>Em uma flexbox, os itens flexíveis são organizados em ordem crescente de order. Mas, por padrão, todos eles têm 
+        a ordem 0. Portanto, eles são organizados na ordem em que ocorrem na marcação. Portanto, ao definir o valor 
+        da ordem do sapo amarelo, ele se moverá para o final e os dois sapos restantes serão automaticamente dispostos 
+        nas vitórias correspondentes.</p>
+
+        <p><strong>Questão 13</strong></p>
+        <p>Desta vez, os sapos estão dispostos horizontalmente, mas na ordem oposta, então sabemos que 
+            precisamos definir a flex-direction como row-reverse. Além disso eles estão na parte superior, então 
+            precisamos definir os align-items como 'flex-end' ou 'end' para que assim os sapos desçam para a parte 
+            inferior. Por fim, queremos que os sapos se alinhem no centro horizontalmente. Portanto, usamos 
+            justify-content: center.</p>
+</body>
+</html>
